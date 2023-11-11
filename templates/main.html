@@ -1,11 +1,38 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>{% block title %}{% endblock %} | pre-print</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}?after">
+    {% block additional_head %}
+    {% endblock %}
 </head>
 <body>
-    <h1>test</h1>
+    <div class="navbar">
+        <div class="navbar-left">
+            <a href="{% url 'main' %}">
+                로고
+            </a>
+        </div>
+        <div class="navbar-center">
+            <a href="#">프린트소개</a>
+            <a href="#">이용약관</a>
+            <a href="#">Q&A</a>
+        </div>
+        <div class="navbar-right">
+            <a href="{% url 'preprint:mypage' %}">마이페이지</a>
+            <a href="{% url 'preprint:cloud_history' %}">주문내역</a>
+        </div>
+    </div>
+    <div class="content">
+        {% block content %}
+        {% endblock %}
+    </div>
+    <div class="footer">
+        <p>전화번호: 123-456-7890</p>
+        <p>preprint 사업</p>
+    </div>
 </body>
 </html>

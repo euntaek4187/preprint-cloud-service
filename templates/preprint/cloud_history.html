@@ -1,0 +1,33 @@
+
+{% extends 'main.html' %}
+{% load static %}
+{% block title %}결제내역{% endblock %}
+
+{% block additional_head %}
+<link rel="stylesheet" href="{% static 'css/preprint.css' %}?after">
+{% endblock %}
+
+{% block content %}
+<div class="payment-detail-container">
+    <h1 class="logo">Requested Print</h1>
+    <div class="payment-detail-page">
+    <h3>예약된 주문 : {{uploads_count}}</h3>
+    {% for upload_with_files in uploads_with_files %}
+    <div class="order-div">
+        <h3>사물함 번호: {{ upload_with_files.upload.id }}</h3>
+        <p>주문 날짜: {{ upload_with_files.upload.upload_date }}</p>
+        <div>
+            <p>사물함 PW: {{ upload_with_files.upload.upload_pw }}</p>
+        </div>
+        <h4>파일:</h4>
+        <ul class="order-files">
+            {% for file in upload_with_files.upload_files %}
+                <li><a href="{{ file.upload_file.url }}">{{ file.upload_file.name }}</a></li>
+            {% endfor %}
+        </ul>
+    </div>
+    {% endfor %}
+    </div>
+</div>
+
+{% endblock %}

@@ -1,0 +1,52 @@
+
+
+{% extends 'main.html' %}
+{% load static %}
+{% block title %}회원가입{% endblock %}
+
+{% block additional_head %}
+<link rel="stylesheet" href="{% static 'css/account.css' %}?after">
+{% endblock %}
+
+{% block content %}
+<div class="centered-form-container">
+    <form action="" method="POST" enctype="multipart/form-data">
+        {% csrf_token %}
+        <h1 class="logo">Sign up</h1>
+        <div class="login-container">
+            <div class="signup-form-group">
+                <label for="{{ form.username.id_for_label }}">name:</label>
+                {{ form.username }}
+            </div>
+            <div class="signup-form-group">
+                <label for="{{ form.email.id_for_label }}">email:</label>
+                {{ form.email }}
+            </div>
+            <div class="signup-form-group">
+                <label for="{{ form.phone.id_for_label }}">phone:</label>
+                {{ form.phone }}
+            </div>
+            <div class="signup-form-group">
+                <label for="{{ form.password1.id_for_label }}">pw:</label>
+                {{ form.password1 }}
+            </div>
+            <div class="signup-form-group">
+                <label for="{{ form.password2.id_for_label }}">pw(re):</label>
+                {{ form.password2 }}
+            </div>
+        </div>
+        <div>
+            <input type="submit" value="Sign up" class="signup-button">
+        </div>
+    </form>
+</div>
+
+{% if messages %}
+<ul class="messages">
+    {% for message in messages %}
+    <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+    {% endfor %}
+</ul>
+{% endif %}
+
+{% endblock %}

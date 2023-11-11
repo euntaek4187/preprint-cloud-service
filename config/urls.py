@@ -8,6 +8,7 @@ from preprint.views import *
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', main, name="main"),
+    path('upload/', upload, name="upload"),
     path('accounts/', include('accounts.urls')),
     path('preprint/', include('preprint.urls')),
 ]

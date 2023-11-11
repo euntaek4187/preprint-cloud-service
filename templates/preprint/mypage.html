@@ -1,0 +1,22 @@
+
+
+{% extends 'main.html' %}
+{% load static %}
+{% block title %}마이페이지{% endblock %}
+
+{% block additional_head %}
+<link rel="stylesheet" href="{% static 'css/preprint.css' %}?after">
+{% endblock %}
+
+{% block content %}
+<div class="mypage-container">
+    <div>
+        <h1 class="logo">My Page</h1>
+        <h3 class="mypage-info-block">고객 번호: <div>{{ user.id }}</div></h3>
+        <h3 class="mypage-info-block">이름: <div>{{ user.username }}</div></h3>
+        <h3 class="mypage-info-block">이메일: <div>{{ user.email }}</div></h3>
+        <h3 class="mypage-info-block">전화번호: <div>{{ user.phone }}</div></h3>
+    </div>
+</div>
+{% endblock %}
+

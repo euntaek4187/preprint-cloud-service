@@ -2,6 +2,8 @@ from django.shortcuts import render, redirect
 from django.contrib.auth import login, logout
 from django.contrib.auth.forms import AuthenticationForm
 from .forms import SignUpForm
+from django.contrib import messages
+
 
 def print_signup(req):
     if req.method == 'GET':
@@ -14,7 +16,12 @@ def print_signup(req):
             instance = form.save()
             return redirect('main')
         else:
-            return redirect('accounts:signup')
+            for field in form.errors:
+                form[field].field.widget.attrs['class'] = 'error'  # This can highlight the input field with error
+                for error in form[field].errors:
+                    messages.error(req, error)
+    context = {'form': form}
+    return render(req, 'accounts/print_signup.html', context)
         
 def print_login(req):
     if req.method == 'GET':
