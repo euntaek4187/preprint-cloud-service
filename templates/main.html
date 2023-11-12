@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{% block title %}{% endblock %} | pre-print</title>
     <link rel="stylesheet" href="{% static 'css/style.css' %}?after">
+    <link rel="shortcut icon" type="image/x-icon" href="{% static 'img/logo.png' %}" />
     {% block additional_head %}
     {% endblock %}
 </head>
@@ -13,7 +14,7 @@
     <div class="navbar">
         <div class="navbar-left">
             <a href="{% url 'main' %}">
-                로고
+                <img class="logo-image" src="{% static 'img/logo.png' %}" alt="로고">
             </a>
         </div>
         <div class="navbar-center">
@@ -22,8 +23,12 @@
             <a href="#">Q&A</a>
         </div>
         <div class="navbar-right">
-            <a href="{% url 'preprint:mypage' %}">마이페이지</a>
-            <a href="{% url 'preprint:cloud_history' %}">주문내역</a>
+            <a href="{% url 'preprint:mypage' %}">
+                <img class="mypage-image" src="{% static 'img/mypage.png' %}" alt="로고">
+            </a>
+            <a href="{% url 'preprint:cloud_history' %}">
+                <img class="cloud-image" src="{% static 'img/payment.png' %}" alt="로고">
+            </a>
         </div>
     </div>
     <div class="content">

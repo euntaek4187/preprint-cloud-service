@@ -17,7 +17,7 @@ def print_signup(req):
             return redirect('main')
         else:
             for field in form.errors:
-                form[field].field.widget.attrs['class'] = 'error'  # This can highlight the input field with error
+                form[field].field.widget.attrs['class'] = 'error'
                 for error in form[field].errors:
                     messages.error(req, error)
     context = {'form': form}

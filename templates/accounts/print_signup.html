@@ -12,7 +12,7 @@
 <div class="centered-form-container">
     <form action="" method="POST" enctype="multipart/form-data">
         {% csrf_token %}
-        <h1 class="logo">Sign up</h1>
+        <h1 class="logo">Sign Up</h1>
         <div class="login-container">
             <div class="signup-form-group">
                 <label for="{{ form.username.id_for_label }}">name:</label>
@@ -21,10 +21,6 @@
             <div class="signup-form-group">
                 <label for="{{ form.email.id_for_label }}">email:</label>
                 {{ form.email }}
-            </div>
-            <div class="signup-form-group">
-                <label for="{{ form.phone.id_for_label }}">phone:</label>
-                {{ form.phone }}
             </div>
             <div class="signup-form-group">
                 <label for="{{ form.password1.id_for_label }}">pw:</label>

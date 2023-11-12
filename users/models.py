@@ -22,5 +22,5 @@ class UserManager(DJangoUserManager):
         return self._create_user(username, email, password, **extra_fields)
 
 class User(AbstractUser):
-    phone = models.CharField(verbose_name='전화번호', max_length=11)
+    # phone = models.CharField(verbose_name='전화번호', max_length=11)
     objects = UserManager()

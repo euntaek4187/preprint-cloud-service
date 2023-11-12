@@ -17,7 +17,7 @@
 
 .login-button {
     padding: 20px 250px 20px 250px;
-    background-color: #90EE90;
+    background-color: #76abfc;
     border: none; 
     cursor: pointer;
     font-size: 40px;
@@ -26,7 +26,7 @@
 }
 
 .login-button:hover {
-    background-color: #80DD80; 
+    background-color: #76abfc;
 }
 
 .login-form-group {
@@ -63,7 +63,7 @@ input[type="text"], input[type="password"], input[type="email"] {
 }
 
 .signup-button {
-    background-color: #90EE90;
+    background-color: #76abfc;
     padding: 20px 250px 20px 250px;
     font-size: 40px;
     border-radius: 40px;
@@ -72,4 +72,8 @@ input[type="text"], input[type="password"], input[type="email"] {
     color: white;
 }
 
+#select_certification{
+    position: relative;
+    bottom: 150px;
+}
 
