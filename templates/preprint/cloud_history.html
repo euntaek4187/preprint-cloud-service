@@ -1,14 +1,14 @@
 
 {% extends 'main.html' %}
 {% load static %}
-{% block title %}결제내역{% endblock %}
+{% block title %}클라우드{% endblock %}
 
 {% block additional_head %}
 <link rel="stylesheet" href="{% static 'css/preprint.css' %}?after">
 {% endblock %}
 
 {% block content %}
-<div class="payment-detail-container">
+<div class="payment-detail-container"> 
     <h1 class="logo">Requested Print</h1>
     <div class="payment-detail-page">
     <h3>예약된 주문 : {{uploads_count}}</h3>

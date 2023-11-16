@@ -36,7 +36,28 @@ def upload(req):
             UploadFile.objects.create(upload=upload, upload_file=file)
         
         return redirect('main')
-    
+
+def detail(req):
+    if not req.user.is_authenticated:
+        return redirect('accounts:login')
+
+    upload_with_files = None
+    if req.method == 'GET':
+        cloud_code = req.GET.get('cloud_code', None)
+        if cloud_code:
+            try:
+                upload = Upload.objects.get(upload_pw=cloud_code)
+                upload_files = UploadFile.objects.filter(upload=upload)
+                upload_with_files = {
+                    'upload': upload,
+                    'upload_files': upload_files,
+                }
+            except Upload.DoesNotExist:
+                pass  # 혹은 오류 메시지 처리
+
+    return render(req, 'print_detail.html', {'upload_with_files': upload_with_files})
+
+
 
 def mypage(req):
     if not req.user.is_authenticated:

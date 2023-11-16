@@ -5,8 +5,17 @@
 {% block content %}
 <div class="print-main">
   <h1 class="logo">pre-print</h1>
+  <form action="/detail/">
+    <div class="search-form-group">
+      <input class="search-space" type="text" name="cloud_code" placeholder="코드를 입력해주세요.">
+      <button class="search-submit-button" type="submit">
+        <i class="fa fa-search"></i>
+      </button>
+    </div>
+  </form>
+
   <form action="/upload/">
-    <button type="submit" class="print-start-button">print !</button>
+    <button type="submit" class="print-start-button">upload !</button>
   </form>
 
   <div class="authentication">
