@@ -4,7 +4,7 @@
 
 {% block content %}
 <div class="print-main">
-  <h1 class="logo">pre-print</h1>
+  <h1 class="logo">preprint cloud</h1>
   <form action="/detail/">
     <div class="search-form-group">
       <input class="search-space" type="text" name="cloud_code" placeholder="코드를 입력해주세요.">
@@ -13,6 +13,11 @@
       </button>
     </div>
   </form>
+  {% if messages %}
+  {% for message in messages %}
+      <p {% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</p>
+  {% endfor %}
+  {% endif %}
 
   <form action="/upload/">
     <button type="submit" class="print-start-button">upload !</button>
@@ -29,5 +34,4 @@
     {% endif %}
   </div>
 </div>
-
 {% endblock %}

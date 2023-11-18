@@ -1,4 +1,12 @@
 
+.delete-button {
+    background-color: red;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+
 /* 마이페이지 */
 .mypage-info-block{
     display: flex;

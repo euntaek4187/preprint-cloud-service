@@ -9,7 +9,7 @@
 
 {% block content %}
 <div class="payment-detail-container"> 
-    <h1 class="logo">Requested Print</h1>
+    <h1 class="logo">Cloud Flies</h1>
     <div class="payment-detail-page">
     <h3>예약된 주문 : {{uploads_count}}</h3>
     {% for upload_with_files in uploads_with_files %}
@@ -25,6 +25,10 @@
                 <li><a href="{{ file.upload_file.url }}">{{ file.upload_file.name }}</a></li>
             {% endfor %}
         </ul>
+        <form action="{% url 'delete_upload' upload_with_files.upload.id %}" method="post" class="delete-form">
+            {% csrf_token %}
+            <button type="submit" class="delete-button">X</button>
+        </form>
     </div>
     {% endfor %}
     </div>

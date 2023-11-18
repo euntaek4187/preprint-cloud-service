@@ -9,6 +9,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', main, name="main"),
     path('upload/', upload, name="upload"),
+    path('delete-upload/<int:upload_id>/', delete_upload, name='delete_upload'),
     path('detail/', detail, name="detail"),
     path('accounts/', include('accounts.urls')),
     path('preprint/', include('preprint.urls')),

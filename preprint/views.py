@@ -1,8 +1,9 @@
-from django.shortcuts import render, redirect
+from django.shortcuts import render, redirect, get_object_or_404
 from django.contrib import messages
 from .models import Upload, UploadFile
+import os
+from django.conf import settings
 
-# Create your views here.
 def main(req):
     return render(req, 'print_main.html')
 
@@ -14,7 +15,6 @@ def upload(req):
             return render(req, "print_upload.html")
     elif req.method == "POST":
         files = req.FILES.getlist('files')
-        # color = req.POST['color']
         pw = req.POST['pw']
 
         if not files:
@@ -25,7 +25,6 @@ def upload(req):
             messages.error(req, "비밀번호는 8자리 이상의 문자, 숫자를 입력해야합니다.")
             return render(req, "print_upload.html")
 
-        
         if Upload.objects.filter(upload_pw=pw).exists():
             messages.error(req, "이미 존재하는 비밀번호입니다.")
             return render(req, "print_upload.html")
@@ -34,13 +33,9 @@ def upload(req):
 
         for file in files:
             UploadFile.objects.create(upload=upload, upload_file=file)
-        
-        return redirect('main')
+    return redirect('main')
 
 def detail(req):
-    if not req.user.is_authenticated:
-        return redirect('accounts:login')
-
     upload_with_files = None
     if req.method == 'GET':
         cloud_code = req.GET.get('cloud_code', None)
@@ -53,10 +48,24 @@ def detail(req):
                     'upload_files': upload_files,
                 }
             except Upload.DoesNotExist:
-                pass  # 혹은 오류 메시지 처리
+                messages.error(req, "해당 파일 코드가 존재하지 않습니다.")
+                return render(req, "print_main.html")
 
     return render(req, 'print_detail.html', {'upload_with_files': upload_with_files})
 
+def delete_upload(request, upload_id):
+    if request.method == 'POST':
+        upload = get_object_or_404(Upload, pk=upload_id, upload_user=request.user)
+        upload_files = UploadFile.objects.filter(upload=upload)
+
+        for upload_file in upload_files:
+            file_path = os.path.join(settings.MEDIA_ROOT, upload_file.upload_file.name)
+            if os.path.exists(file_path):
+                os.remove(file_path)
+
+        upload.delete()
+
+        return redirect('main')
 
 
 def mypage(req):
