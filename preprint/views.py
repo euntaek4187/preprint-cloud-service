@@ -3,6 +3,22 @@ from django.contrib import messages
 from .models import Upload, UploadFile
 import os
 from django.conf import settings
+from datetime import datetime, timedelta
+from django.utils import timezone
+
+def check_file_date():
+    now = timezone.now()
+    for upload in Upload.objects.all():
+        if now - upload.upload_date > timedelta(minutes=5):
+            upload_files = UploadFile.objects.filter(upload=upload)
+
+            for upload_file in upload_files:
+                file_path = os.path.join(settings.MEDIA_ROOT, upload_file.upload_file.name)
+                if os.path.exists(file_path):
+                    os.remove(file_path)
+
+            upload.delete()
+
 
 def main(req):
     return render(req, 'print_main.html')
@@ -33,6 +49,7 @@ def upload(req):
 
         for file in files:
             UploadFile.objects.create(upload=upload, upload_file=file)
+    check_file_date()
     return redirect('main')
 
 def detail(req):
@@ -53,9 +70,9 @@ def detail(req):
 
     return render(req, 'print_detail.html', {'upload_with_files': upload_with_files})
 
-def delete_upload(request, upload_id):
-    if request.method == 'POST':
-        upload = get_object_or_404(Upload, pk=upload_id, upload_user=request.user)
+def delete_upload(req, upload_id):
+    if req.method == 'POST':
+        upload = get_object_or_404(Upload, pk=upload_id, upload_user=req.user)
         upload_files = UploadFile.objects.filter(upload=upload)
 
         for upload_file in upload_files:
@@ -64,7 +81,6 @@ def delete_upload(request, upload_id):
                 os.remove(file_path)
 
         upload.delete()
-
         return redirect('main')
 
 

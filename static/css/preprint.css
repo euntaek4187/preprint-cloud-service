@@ -1,11 +1,12 @@
 
 .delete-button {
-    background-color: red;
-    color: white;
+    background-color: rgb(133, 135, 255);
+    color: rgb(255, 255, 255);
     border: none;
     cursor: pointer;
+    border-radius: 40px;
+    padding: 5px 10px 5px 10px;
 }
-
 
 /* 마이페이지 */
 .mypage-info-block{
