@@ -23,7 +23,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent.parent
 # SECURITY WARNING: keep the secret key used in production secret!
 
 
-secret_file = BASE_DIR / "secrets.json"
+secret_file = BASE_DIR / "secretskey.json"
 with open(secret_file) as file:
     secrets = json.loads(file.read())
 
