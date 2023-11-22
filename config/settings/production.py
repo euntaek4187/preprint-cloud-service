@@ -3,7 +3,7 @@ from .base import *
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['naver.com'] #도메인 혹은 ip를...
+ALLOWED_HOSTS = ['43.201.116.139'] #도메인 혹은 ip를...
 
 INSTALLED_APPS = DJANGO_APPS + PROJECT_APPS
 
