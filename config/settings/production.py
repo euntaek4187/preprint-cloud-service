@@ -5,6 +5,8 @@ DEBUG = False
 
 ALLOWED_HOSTS = ['naver.com'] #도메인 혹은 ip를...
 
+INSTALLED_APPS = DJANGO_APPS + PROJECT_APPS
+
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
