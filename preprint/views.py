@@ -24,6 +24,9 @@ from django.utils import timezone
 def main(req):
     return render(req, 'print_main.html')
 
+def guide(req):
+    return render(req, 'preprintcloud_guide.html')
+
 def upload(req):
     if req.method == "GET":
         if not req.user.is_authenticated:

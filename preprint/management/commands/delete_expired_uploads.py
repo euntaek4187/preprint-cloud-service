@@ -10,7 +10,7 @@ class Command(BaseCommand):
 
     def handle(self, *args, **options):
         now = timezone.now()
-        expired_uploads = Upload.objects.filter(upload_date__lte=now - timedelta(minutes=3))
+        expired_uploads = Upload.objects.filter(upload_date__lte=now - timedelta(days=7))
 
         for upload in expired_uploads:
             upload_files = UploadFile.objects.filter(upload=upload)
