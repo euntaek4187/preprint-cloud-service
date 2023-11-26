@@ -38,17 +38,26 @@ def upload(req):
             messages.error(req, "파일을 선택해주세요.")
             return render(req, "print_upload.html")
         
+        # if len(files) > 5:
+        #     messages.error(req, "업로드는 최대 5개의 파일까지 가능합니다.")
+        #     return render(req, "print_upload.html")
+        
         if not pw or not (8 <= len(pw) <= 16):
             messages.error(req, "비밀번호는 8자리 이상 16자리 이하의 문자, 숫자를 입력해야합니다.")
             return render(req, "print_upload.html")
         
         upload_count = Upload.objects.filter(upload_user=req.user).count()
-        if upload_count >= 5:
-            messages.error(req, "업로드는 최대 5번까지 가능합니다.")
+        if upload_count >= 3:
+            messages.error(req, "업로드는 최대 3개까지 가능합니다. 이전 업로드 파일을 삭제해주세요.")
             return render(req, "print_upload.html")
 
         if Upload.objects.filter(upload_pw=pw).exists():
             messages.error(req, "이미 존재하는 비밀번호입니다.")
+            return render(req, "print_upload.html")
+        
+        total_size = sum(file.size for file in files)
+        if total_size > 30 * 1024 * 1024:
+            messages.error(req, "모든 파일의 크기 합이 30MB를 초과할 수 없습니다.")
             return render(req, "print_upload.html")
 
         upload = Upload.objects.create(upload_user=req.user, upload_pw=pw)
