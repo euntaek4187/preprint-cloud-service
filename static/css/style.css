@@ -50,13 +50,13 @@ body {
 }
 
 .logo {
-    color: #76abfc;
+    color: #1855b1;
     margin-top: 50px;
     font-size: 80px;
 }
 
 .print-start-button {
-    background-color: #76abfc;
+    background-color: #1855b1;
     padding: 20px 250px 20px 250px;
     border-radius: 40px;
     border: none;
@@ -106,7 +106,7 @@ box-sizing: border-box;
 }
 
 .search-submit-button {
-    background-color: #76abfc;
+    background-color: #1855b1;
     padding: 5px 20px 5px 20px;
     border-radius: 20px 40px 40px 20px;
     border: none;
@@ -154,7 +154,7 @@ box-sizing: border-box;
 }
 
 .pw-submit-button {
-    background-color: #76abfc;
+    background-color: #1855b1;
     padding: 5px 20px 5px 20px;
     border-radius: 20px;
     border: none;
