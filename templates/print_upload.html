@@ -19,16 +19,17 @@
     </div>
     <p>업로드 비밀번호는 8자이상 문자, 숫자의 조합으로 작성해주세요.</p>
     <button class="pw-submit-button" type="submit">upload!</button>
-  </form>
-</div>
-
-{% if messages %}
+    {% if messages %}
     <div class="messages">
         {% for message in messages %}
             <p {% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</p>
         {% endfor %}
     </div>
-{% endif %}
+    {% endif %}
+  </form>
+</div>
+
+
 
 {% endblock %}
 
