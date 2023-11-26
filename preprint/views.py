@@ -38,8 +38,13 @@ def upload(req):
             messages.error(req, "파일을 선택해주세요.")
             return render(req, "print_upload.html")
         
-        if not pw or len(pw) < 8:
-            messages.error(req, "비밀번호는 8자리 이상의 문자, 숫자를 입력해야합니다.")
+        if not pw or not (8 <= len(pw) <= 16):
+            messages.error(req, "비밀번호는 8자리 이상 16자리 이하의 문자, 숫자를 입력해야합니다.")
+            return render(req, "print_upload.html")
+        
+        upload_count = Upload.objects.filter(upload_user=req.user).count()
+        if upload_count >= 5:
+            messages.error(req, "업로드는 최대 5번까지 가능합니다.")
             return render(req, "print_upload.html")
 
         if Upload.objects.filter(upload_pw=pw).exists():
