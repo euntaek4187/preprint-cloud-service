@@ -4,7 +4,7 @@ from .base import *
 DEBUG = False
 
 ALLOWED_HOSTS = ['43.201.116.139', 'preprintcloud.com', 'www.preprintcloud.com'] #도메인 혹은 ip를...
-CSRF_TRUSTED_ORIGINS = ['43.201.116.139', 'preprintcloud.com', 'www.preprintcloud.com']
+CSRF_TRUSTED_ORIGINS = ['43.201.116.139', 'https://preprintcloud.com', 'https://www.preprintcloud.com']
 
 INSTALLED_APPS = DJANGO_APPS + PROJECT_APPS
 
