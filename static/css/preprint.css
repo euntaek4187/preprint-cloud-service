@@ -25,13 +25,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: calc(100vh - (200px));
+    height: calc(100vh - (300px));
 }
 
 /* 결제내역 */
 .payment-detail-container {
     margin: 0 auto;
-    padding: 20px;
 }
 
 .payment-detail-page {

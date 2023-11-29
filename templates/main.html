@@ -15,13 +15,14 @@
     <div class="navbar">
         <div class="navbar-left">
             <a href="{% url 'main' %}">
-                <img class="logo-image" src="{% static 'img/logo.png' %}" alt="로고">
+                <img class="logo-image" src="{% static 'img/logo2.png' %}" alt="로고">
             </a>
         </div>
-        <div class="navbar-center">
-            <a class="introduce" href="/guide/">프린트소개</a>
-        </div>
+
         <div class="navbar-right">
+            <div class="navbar-center">
+                <a class="introduce" href="/guide/">이용방법</a>
+            </div>
             <a href="{% url 'preprint:mypage' %}">
                 <img class="mypage-image" src="{% static 'img/mypage.png' %}" alt="로고">
             </a>
@@ -35,7 +36,7 @@
         {% endblock %}
     </div>
     <div class="footer">
-        <p>preprint 사업</p>
+        <p>위치: 서울 서대문구 거북골로 34  명지대학교 학생회관 1층 preprint</p>
         <p>서비스 오류 및 수정 문의: choiet4187@naver.com</p>
     </div>
 </body>

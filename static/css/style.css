@@ -7,6 +7,10 @@ body {
     position: relative;
 }
 
+.content {
+    text-align: center;
+}
+
 .preprint-logo{
     width: 130px;
 }
@@ -35,6 +39,7 @@ body {
     display: flex;
     align-items: center;
 }
+
 
 .navbar-right a{
     margin-right: 20px;
@@ -76,19 +81,21 @@ margin-top: 5px;
 }
 
 .footer {
-background-color: #dfdfdf;
-padding: 10px;
-text-align: center;
-position: fixed;
-bottom: 0;
-width: 100%;
-left: 0;
-box-sizing: border-box;
+    background-color: #dfdfdf;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+    box-sizing: border-box;
+    height: calc(100vh / 8);
 }
+
 
 .print-main{
     position: relative;
-    top: 150px;
+    top: 80px;
 }
 
 .search-form-group {
@@ -121,8 +128,9 @@ box-sizing: border-box;
     background-color: #1855b1;
     border-radius: 40px;
     cursor: pointer;
-    width: 110px;
+    width: 95px;
     height: 35px;
+    margin-right: 20px;
     
 }
 .introduce{
@@ -146,7 +154,7 @@ box-sizing: border-box;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: calc(100vh - (200px));
+    height: calc(100vh - (300px));
 }
 
 .color-space{
