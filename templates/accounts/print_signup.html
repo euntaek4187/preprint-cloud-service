@@ -14,8 +14,9 @@
         {% csrf_token %}
         <h1 class="logo">Sign Up</h1>
         <div class="login-container">
+            <p>ID 는 서비스 로그인 시 사용됩니다. <br>preprint 관련 이벤트 안내 수신을 원하시면 email 란을 채워주세요</p>
             <div class="signup-form-group">
-                <label for="{{ form.username.id_for_label }}">name:</label>
+                <label for="{{ form.username.id_for_label }}">ID:</label>
                 {{ form.username }}
             </div>
             <div class="signup-form-group">

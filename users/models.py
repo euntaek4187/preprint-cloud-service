@@ -3,8 +3,8 @@ from django.contrib.auth.models import AbstractUser, UserManager as DJangoUserMa
 
 class UserManager(DJangoUserManager):
     def _create_user(self, username, email, password, **extra_fields):
-        if not email:
-            raise ValueError('이메일 필수.')
+        # if not email:
+        #     raise ValueError('이메일 필수.')
         
         user = self.model(username=username, email=email, **extra_fields)
         user.set_password(password)
