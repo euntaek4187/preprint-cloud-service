@@ -185,11 +185,6 @@ margin-top: 5px;
     color: white;
 }
 
-/* .messages{
-    position: relative;
-    bottom: 80px;
-} */
-
 /* 결제 페이지 */
 .payment-files{
     background-color: #EDEDED;
@@ -210,5 +205,100 @@ margin-top: 5px;
     margin-left: auto; 
     margin-right: auto; 
 }
+
+@media only screen and (max-width: 600px) {
+    .search-form-group {
+        margin-bottom: 20px;
+    }
+    .search-space{
+        background-color: #EDEDED;
+        padding: 10px 20px 10px 20px;
+        border-radius: 40px 20px 20px 40px;
+        border: none;
+        cursor: pointer;
+        font-size: 20px;
+        width: 200px;
+        height: 50px;
+    }
+    
+    .search-submit-button {
+        background-color: #1855b1;
+        padding: 5px 20px 5px 20px;
+        border-radius: 20px 40px 40px 20px;
+        border: none;
+        cursor: pointer;
+        font-size: 20px;
+        color: white;
+        width: 100px;
+        height: 70px;
+    }
+
+    .print-start-button {
+        background-color: #1855b1;
+        padding: 20px 140px 20px 140px;
+        border-radius: 40px;
+        border: none;
+        cursor: pointer;
+        font-size: 20px;
+        color: white;
+    }
+
+    .logo {
+        color: #1855b1;
+        margin-top: 50px;
+        font-size: 50px;
+    }
+
+    .logo-image{
+        width: 100px;
+    }
+
+    /* 디테일 */
+    .detail-form-group {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+     
+    .detail-form-group h2 {
+        margin-right: 20px; 
+    }
+    
+    .centered-form-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: calc(100vh - (300px));
+    }
+    
+    .color-space{
+        background-color: #EDEDED;
+        padding: 17px 40px 17px 40px;
+        border-radius: 20px;
+        border: none;
+        cursor: pointer;
+        font-size: 20px;
+    }
+    
+    .pw-space{
+        background-color: #EDEDED;
+        padding: 10px 20px 10px 20px;
+        border-radius: 20px;
+        border: none;
+        cursor: pointer;
+        font-size: 20px;
+    }
+    
+    .pw-submit-button {
+        background-color: #1855b1;
+        padding: 5px 20px 5px 20px;
+        border-radius: 20px;
+        border: none;
+        cursor: pointer;
+        font-size: 20px;
+        color: white;
+    }
+}
+
 
 
