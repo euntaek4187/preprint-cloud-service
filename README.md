@@ -4,9 +4,7 @@
 
 ## **preprint-cloud 서비스**
 -----
-![iamge](md_img/Untitled.png)
-
-<img src="md_img/Untitled.png" style="width: 50px;">
+<img src="md_img/Untitled.png" style="width: 350px;">
 
 **preprint-cloud 서비스는 학생 회관 1층 preprint의 서브 프로젝트로 사용자의 파일 출력 및 관리의 편의성을 제공하는 서비스입니다.**
 
@@ -21,11 +19,11 @@
 ## **preprint-cloud 사용 방법**
 -----
 ### **1. 회원가입**
-![ref1]
+<img src="md_img/Untitled1.png" style="width: 650px;">
 
 ⇒ **회원가입 버튼 클릭**
 
-![ref2]
+<img src="md_img/Untitled2.png" style="width: 650px;">
 
 - **이미 존재하는 사용자의 이름의 경우 해당 이름 사용이 제한됩니다.**
 - **비밀번호는 최소 8문자를 포함해야 합니다.**
@@ -36,7 +34,7 @@
 
 
 ### **2. 로그인**
-![ref3]
+<img src="md_img/Untitled3.png" style="width: 650px;">
 
 **⇒ 회원가입한 계정으로 로그인을 진행해주세요**
 
@@ -45,19 +43,20 @@
 ### **3. 업로드**
 **로그인이 완료된 상태일 때만 출력할 파일 등록을 진행할 수 있습니다.**
 
-![ref4]
+<img src="md_img/Untitled4.png" style="width: 650px;">
+
 
 **⇒ 업로드 클릭**
 
-![ref5]
+<img src="md_img/Untitled5.png" style="width: 650px;">
 
 **⇒ 파일 선택 버튼 클릭**
 
-![ref6]
+<img src="md_img/Untitled6.png" style="width: 650px;">
 
 **⇒ 파일을 선택합니다.**
 
-![ref7]
+<img src="md_img/Untitled7.png" style="width: 650px;">
 
 **⇒ 파일을 검색할 수 있는 파일 “비밀번호”를 함께 작성하여 업로드 합니다.**
 
@@ -66,11 +65,11 @@
 
 
 ### **4. 업로드 된 파일 확인**
-![ref8]
+<img src="md_img/Untitled8.png" style="width: 650px;">
 
 ⇒ **위 문서 아이콘 클릭 시 업로드한 파일의 정보를 확인할 수 있습니다.**
 
-![ref9]
+<img src="md_img/Untitled9.png" style="width: 650px;">
 
 ⇒ **동시에 최대 3개의 업로드만 보관할 수 있습니다.**
 
@@ -84,15 +83,15 @@
 
 **로그인을 진행하지 않은 상태에서도 검색이 가능합니다.**
 
-![ref10]
+<img src="md_img/Untitled10.png" style="width: 650px;">
 
 ⇒ **다음과 같이 업로드 시 설정한 비밀번호를 입력 후 검색 버튼을 클릭해주세요**
 
-![ref11]
+<img src="md_img/Untitled11.png" style="width: 650px;">
 
 ⇒ **다음과 같이 업로드한 파일과 관련 정보가 출력됩니다. 출력하고자 하는 파일을 클릭하고 아래와 같이 인쇄를 진행해주세요**
 
-![ref12]
+<img src="md_img/Untitled12.png" style="width: 650px;">
 
 
 ## **서비스 이용 중 오류 및 문제 수정 요청**
@@ -100,34 +99,5 @@
 **서비스 이용 중 오류, 문제 발견 시 아래 메일로 수정 요청을 보내주시면 빠른 시일 내 수정하도록 하겠습니다.**
 
 **메일 주소: choiet4187@naver.com**
-
-<img src="md_img/Untitled1.png" style="width: 650px;">
-<img src="md_img/Untitled2.png" style="width: 650px;">
-<img src="md_img/Untitled3.png" style="width: 650px;">
-<img src="md_img/Untitled4.png" style="width: 650px;">
-<img src="md_img/Untitled5.png" style="width: 650px;">
-<img src="md_img/Untitled6.png" style="width: 650px;">
-<img src="md_img/Untitled7.png" style="width: 650px;">
-<img src="md_img/Untitled8.png" style="width: 650px;">
-<img src="md_img/Untitled9.png" style="width: 650px;">
-<img src="md_img/Untitled10.png" style="width: 650px;">
-<img src="md_img/Untitled11.png" style="width: 650px;">
-<img src="md_img/Untitled12.png" style="width: 650px;">
-
-
-[ref0]: md_img/Untitled.png
-[ref1]: md_img/Untitled1.png
-[ref2]: md_img/Untitled2.png
-[ref3]: md_img/Untitled3.png
-[ref4]: md_img/Untitled4.png
-[ref5]: md_img/Untitled5.png
-[ref6]: md_img/Untitled6.png
-[ref7]: md_img/Untitled7.png
-[ref8]: md_img/Untitled8.png
-[ref9]: md_img/Untitled9.png
-[ref10]: md_img/Untitled10.png
-[ref11]: md_img/Untitled11.png
-[ref12]: md_img/Untitled12.png
-
 
 
