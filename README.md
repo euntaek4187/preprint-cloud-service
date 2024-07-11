@@ -4,7 +4,7 @@
 
 ## **preprint-cloud 서비스**
 -----
-![ref0]
+![iamge](md_img/Untitled.png)
 
 **preprint-cloud 서비스는 학생 회관 1층 preprint의 서브 프로젝트로 사용자의 파일 출력 및 관리의 편의성을 제공하는 서비스입니다.**
 
