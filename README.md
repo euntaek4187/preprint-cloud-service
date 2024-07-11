@@ -1,43 +1,30 @@
 ﻿{% load static %}
 
 ## **개발 기간 및 프로젝트 식별**
+**개발 기간: 2023/10/14~2023/11/27"** <br>
+**사용 언어: python, html, css, js** <br>
+**사용 프레임워크: DJango** <br>
+**배포 환경: AWS EC2** <br>
 
-**개발 기간: 2023/10/14~2023/11/27"**
+**역할:** <br>
+-> 백엔드: 최은택 <br>
+-> 프론트: 최은택 <br>
+-> 자동화 프로그램: 최은택 <br>
 
-**사용 언어: python, html, css, js**
+**웹사이트 링크:** https://preprintcloud.com <br>
 
-**사용 프레임워크: DJango**
-
-**배포 환경: AWS EC2**
-
-**역할:**
-
--> 백엔드: 최은택
-
--> 프론트: 최은택
-
--> 자동화 프로그램: 최은택
-
-
-**웹사이트 링크:** https://preprintcloud.com
-
-**개발 과정 및 개발 후기 포스팅**
-
-*서비스 소개와 개발 과정*
-
-https://choiet.tistory.com/16
-
-https://choiet.tistory.com/17
-
-https://choiet.tistory.com/18
+**개발 과정 및 개발 후기 포스팅** <br>
+*서비스 소개와 개발 과정* <br>
+https://choiet.tistory.com/16 <br>
+https://choiet.tistory.com/17 <br>
+https://choiet.tistory.com/18 <br>
 
 
-*서비스 개발 후 한달간 운영 결과와 느낀 점*
-
-https://choiet.tistory.com/23
-
+*서비스 개발 후 한달간 운영 결과와 느낀 점* <br>
+https://choiet.tistory.com/23 <br>
 
 
+ <br>
 
 **preprint-cloud 소개 및 사용 설명서**
 
