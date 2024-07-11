@@ -99,6 +99,21 @@
 
 **메일 주소: choiet4187@naver.com**
 
+<img src="md_img/Untitled.png" style="width: 50px;">
+<img src="md_img/Untitled1.png" style="width: 650px;">
+<img src="md_img/Untitled2.png" style="width: 650px;">
+<img src="md_img/Untitled3.png" style="width: 650px;">
+<img src="md_img/Untitled4.png" style="width: 650px;">
+<img src="md_img/Untitled5.png" style="width: 650px;">
+<img src="md_img/Untitled6.png" style="width: 650px;">
+<img src="md_img/Untitled7.png" style="width: 650px;">
+<img src="md_img/Untitled8.png" style="width: 650px;">
+<img src="md_img/Untitled9.png" style="width: 650px;">
+<img src="md_img/Untitled10.png" style="width: 650px;">
+<img src="md_img/Untitled11.png" style="width: 650px;">
+<img src="md_img/Untitled12.png" style="width: 650px;">
+
+
 [ref0]: md_img/Untitled.png
 [ref1]: md_img/Untitled1.png
 [ref2]: md_img/Untitled2.png
@@ -113,18 +128,5 @@
 [ref11]: md_img/Untitled11.png
 [ref12]: md_img/Untitled12.png
 
-<img src="md_img/Untitled.png" style="width: 350px;">
-<img src="md_img/Untitled1.png" style="width: 650px;">
-<img src="md_img/Untitled2.png" style="width: 650px;">
-<img src="md_img/Untitled3.png" style="width: 650px;">
-<img src="md_img/Untitled4.png" style="width: 650px;">
-<img src="md_img/Untitled5.png" style="width: 650px;">
-<img src="md_img/Untitled6.png" style="width: 650px;">
-<img src="md_img/Untitled7.png" style="width: 650px;">
-<img src="md_img/Untitled8.png" style="width: 650px;">
-<img src="md_img/Untitled9.png" style="width: 650px;">
-<img src="md_img/Untitled10.png" style="width: 650px;">
-<img src="md_img/Untitled11.png" style="width: 650px;">
-<img src="md_img/Untitled12.png" style="width: 650px;">
 
 
