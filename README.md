@@ -6,6 +6,8 @@
 -----
 ![iamge](md_img/Untitled.png)
 
+<img src="md_img/Untitled.png" style="width: 50px;">
+
 **preprint-cloud 서비스는 학생 회관 1층 preprint의 서브 프로젝트로 사용자의 파일 출력 및 관리의 편의성을 제공하는 서비스입니다.**
 
 **기존 프린트 카페에서 파일을 출력하기 위한 매커니즘은 구글, 네이버 메일을 통해 미리 출력하고자 하는 파일을 전송 후 프린트 카페의 데스크탑에서 해당 소셜 플랫폼에 로그인 후 파일을 출력하는 방식입니다.**
@@ -99,7 +101,6 @@
 
 **메일 주소: choiet4187@naver.com**
 
-<img src="md_img/Untitled.png" style="width: 50px;">
 <img src="md_img/Untitled1.png" style="width: 650px;">
 <img src="md_img/Untitled2.png" style="width: 650px;">
 <img src="md_img/Untitled3.png" style="width: 650px;">
