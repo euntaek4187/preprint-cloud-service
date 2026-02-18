@@ -2,8 +2,8 @@ from .base import *
 
 DEBUG = False
 
-ALLOWED_HOSTS = ['54.180.109.153', 'preprintcloud.com', 'www.preprintcloud.com']
-CSRF_TRUSTED_ORIGINS = ['https://54.180.109.153', 'https://preprintcloud.com', 'https://www.preprintcloud.com']
+ALLOWED_HOSTS = ['3.36.228.24', 'preprintcloud.com', 'www.preprintcloud.com']
+CSRF_TRUSTED_ORIGINS = ['https://3.36.228.24', 'https://preprintcloud.com', 'https://www.preprintcloud.com']
 
 INSTALLED_APPS = DJANGO_APPS + PROJECT_APPS
 
